@@ -4,7 +4,7 @@ import { CreateMovieDto } from '../dtos/create-movie.dto';
 import { UpdateMovieDto } from '../dtos/update-movie.dto';
 import { JwtAuthGuard } from '../auth/jwt-auth.guard';
 
-@Controller('movies')
+@Controller('api/movies') // Alterado para 'api/movies' para separar as rotas da API do frontend
 export class MoviesController {
   constructor(private readonly moviesService: MoviesService) {}
 

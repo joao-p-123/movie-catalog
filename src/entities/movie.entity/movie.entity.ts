@@ -16,5 +16,7 @@ export class Movie {
 
   @Column()
   releaseDate: Date;
-}
 
+  @Column({ nullable: true })
+  imageUrl: string; // Novo campo para armazenar o URL da imagem
+}
